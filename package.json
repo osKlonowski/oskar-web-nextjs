@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
+    "lint-init": "next lint",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "next": "latest",
@@ -13,6 +13,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4",
     "postcss": "^8.4.3",
     "tailwindcss": "^2.2.19"
   }
